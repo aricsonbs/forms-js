@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    border: none;
+}
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+    </style>
+    <div class="container">
+        <h1>Formulário de Cadastro de Imóveis de Candeias</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label>Nome: <input type="text" name="nome" required></label>
+            <label>Data de Nascimento: <input type="date" name="dataNascimento" required></label>
+            <label>Sexo:
+                <select name="sexo" required>
+                    <option value="">Selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </label>
+            <label>Nome do Pai: <input type="text" name="nomePai"></label>
+            <label>Nome da Mãe: <input type="text" name="nomeMae"></label>
+            <label>CPF: <input type="text" name="cpf"></label>
+            <label>RG: <input type="text" name="rg"></label>
+            <label>Título de Eleitor: <input type="text" name="tituloEleitor"></label>
+            <label>Telefone: <input type="text" name="telefone"></label>
+            <label>Email: <input type="email" name="email"></label>
+            <label>Endereço: <input type="text" name="endereco"></label>
+            <label>Inscrição Imobiliária: <input type="text" name="inscricao"></label>
+            <label>Vínculo com o Imóvel: <input type="text" name="vinculo"></label>
+            <label>Documentação (upload): <input type="file" name="documentacao" required></label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
